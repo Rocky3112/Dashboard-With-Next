@@ -56,7 +56,7 @@ const Page = () => {
   return (
     <div>
       <div>
-        <h1 className="text-3xl py-8 font-bold text-orange-700">
+        <h1 className="text-3xl py-8 font-bold text-orange-600 px-6">
           Welcome to Dashboard
         </h1>
         <div className="stats  gap-10 mx-5 flex text-center items-center pb-5 text-white">
