@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <main className="flex gap-5">
-      <div className="py-6 px-4 w-1/2 h-screen bg-white z-20 top-0 left- lg:left-0 lg:w-60 peer:transition ease-out delay-150 duration-200">
+      <div className="py-6 px-4 w-1/2 h-screen fixed bg-white z-20 top-0 left- lg:left-0 lg:w-60 peer:transition ease-out delay-150 duration-200">
           <div className="flex flex-col justify-start item-center">
             <h1 className="text-base text-center cursor-pointer font-bold text-blue-900 border-b border-gray-100 pb-4 w-full">
-              Virtual Dashboard
+              Admin Dashboard
             </h1>
             <div className=" my-4 border-b border-gray-100 pb-4">
               <Link href="/home">
@@ -39,18 +39,22 @@ export default function RootLayout({ children }) {
                 </h3>
               </div>
               </Link>
+              <Link href="/profile">
               <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-600 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <CgProfile className="text-2xl text-gray-600 group-hover:text-white " />
                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
                   Profile
                 </h3>
               </div>
+              </Link>
+              <Link href="/comments">
               <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-600 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <FaRegComments className="text-2xl text-gray-600 group-hover:text-white " />
                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
                   Comments
                 </h3>
               </div>
+              </Link>
               <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-600 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <MdOutlineAnalytics className="text-2xl text-gray-600 group-hover:text-white " />
                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
@@ -97,9 +101,9 @@ export default function RootLayout({ children }) {
           </div>
         </div>
       
-        <>
+        <div className=" mx-auto">
         {children}
-        </>
+        </div>
     </main>
       </body>
     </html>
