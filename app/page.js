@@ -59,7 +59,7 @@ const Page = () => {
         <h1 className="text-3xl py-8 font-bold text-orange-600 px-6">
           Welcome to Dashboard
         </h1>
-        <div className="stats  gap-10 mx-5 flex text-center items-center pb-5 text-white">
+        <div className="stats  gap-10 mx-5 flex text-center items-center  text-white mb-8">
           <div className="shadow-2xl bg-orange-500 p-4 rounded w-full">
             <div className="stat-figure text-secondary">
               <svg
@@ -81,7 +81,7 @@ const Page = () => {
             <div className="stat-desc">Jan 1st - Feb 1st</div>
           </div>
 
-          <div className="stat bg-lime-500 rounded w-full p-4">
+          <div className=" shadow-2xl bg-lime-500 rounded w-full p-4">
             <div className="stat-figure text-secondary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ const Page = () => {
             <div className="stat-value">20K</div>
             <div className="stat-desc">↗︎ 400 (22%)</div>
           </div>
-          <div className="stat bg-emerald-600 rounded w-full p-4">
+          <div className=" bg-emerald-600 rounded w-full p-4">
             <div className="stat-figure text-secondary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ const Page = () => {
             <div className="stat-desc">↗︎ 400 (22%)</div>
           </div>
 
-          <div className="stat bg-blue-500 rounded w-full p-4">
+          <div className=" bg-blue-500 rounded w-full p-4">
             <div className="stat-figure text-secondary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
