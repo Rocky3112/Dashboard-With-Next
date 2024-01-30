@@ -15,7 +15,7 @@ const Profile = () => {
 
   return (
     <>
-      <div className="bg-slate-400 my-4 p-5 ms-20 w-[900px] mx-auto rounded-xl">
+      <div className="bg-slate-300 p-5 my-10 ms-20 w-[900px] mx-auto rounded-xl">
         <div className="flex items-center gap-5">
           <div className="w-1/2">
             <Image
