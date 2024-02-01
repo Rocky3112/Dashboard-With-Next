@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen bg-white shadow-2xl rounded-lg py-5 px-3'>
 <div className="chat chat-start ">
   <div className="chat-bubble chat-bubble-primary">What kind of nonsense is this</div>
 </div>

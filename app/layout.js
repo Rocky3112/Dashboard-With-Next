@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import logo from "../public/image.jpg";
 import {
   MdOutlineSpaceDashboard,
   MdOutlineAnalytics,
@@ -12,6 +13,7 @@ import {
 import { CgProfile } from "react-icons/cg";
 import { FaRegComments } from "react-icons/fa";
 import { BiMessageSquareDots } from "react-icons/bi";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,11 +26,60 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <div>
+          <div className="navbar bg-base-100 fixed  z-10 px-10">
+            <div className="flex-1">
+              <h2 className="btn btn-ghost text-xl uppercase bg-black">AH Creation</h2>
+            </div>
+            <div className="flex-none gap-2">
+              <div className="form-control">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="input input-bordered w-24 md:w-auto"
+                />
+              </div>
+              <div className="dropdown dropdown-end">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost btn-circle avatar"
+                >
+                  <div className="w-10 rounded-full">
+                    <Image
+                      alt="Tailwind CSS Navbar component"
+                      src={logo}
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                >
+                  <li>
+                    <a className="justify-between">
+                      Profile
+                      <span className="badge">New</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>Settings</a>
+                  </li>
+                  <li>
+                    <a>Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <main className="flex gap-5">
-          <div className="py-6 px-4 w-1/2 h-screen fixed bg-white z-20 top-0 left- lg:left-0 lg:w-60 peer:transition ease-out delay-150 duration-200">
-            <div className="flex flex-col justify-start item-center">
+          <div className="py-6 px-4 w-1/2   bg-white z-20 top-0 left- lg:left-0 lg:w-60 peer:transition ease-out delay-150 duration-200">
+            <div className="flex flex-col justify-start item-center fixed h-fit">
               <h1 className="text-base text-center cursor-pointer font-bold text-blue-900 border-b border-gray-100 pb-4 w-full">
-                Admin Dashboard
+                AH Dashboard
               </h1>
               <div className=" my-4 border-b border-gray-100 pb-4">
                 <Link href="/">
@@ -105,7 +156,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>
 
-          <div className=" mx-auto">{children}</div>
+          <div className=" mx-auto my-20">{children}</div>
         </main>
       </body>
     </html>
