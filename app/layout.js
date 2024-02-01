@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <div>
           <div className="navbar bg-base-100 fixed  z-10 px-10">
             <div className="flex-1">
-              <h2 className="btn btn-ghost text-xl uppercase bg-black">AH Creation</h2>
+              <h2 className="btn btn-ghost text-xl uppercase bg-black"></h2>
             </div>
             <div className="flex-none gap-2">
               <div className="form-control">
@@ -76,8 +76,8 @@ export default function RootLayout({ children }) {
           </div>
         </div>
         <main className="flex gap-5">
-          <div className="py-6 px-4 w-1/2   bg-white z-20 top-0 left- lg:left-0 lg:w-60 peer:transition ease-out delay-150 duration-200">
-            <div className="flex flex-col justify-start item-center fixed h-fit">
+          <div className="py-6 px-4  fixed  bg-white z-20 top-0 left- lg:left-0 lg:w-60 peer:transition ease-out delay-150 duration-200">
+            <div className="flex flex-col justify-start item-center  h-fit">
               <h1 className="text-base text-center cursor-pointer font-bold text-blue-900 border-b border-gray-100 pb-4 w-full">
                 AH Dashboard
               </h1>
@@ -99,9 +99,9 @@ export default function RootLayout({ children }) {
                   </div>
                 </Link>
                 <Link href="/comments">
-                  <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-600 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
+                  <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-600 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto ">
                     <FaRegComments className="text-2xl text-gray-600 group-hover:text-white " />
-                    <h3 className="text-base text-gray-800 group-hover:text-white font-semibold ">
+                    <h3 className="text-base text-gray-800 group-hover:text-white font-semibold pr-10">
                       Comments
                     </h3>
                   </div>

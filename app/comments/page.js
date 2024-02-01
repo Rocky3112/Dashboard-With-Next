@@ -19,8 +19,8 @@ const CommentCard = ({ comment }) => {
 
 const CommentsList = () => {
   return (
-    <div className="bg-gray-100  flex items-center justify-center">
-      <div className="w-1/2">
+    <div className="bg-gray-100  flex items-center w-1/2 gap-5 rounded p-3 mx-auto">
+      <div className="">
         <h1 className="text-3xl font-semibold mb-8">Comments</h1>
         {commentsData.map((comment) => (
           <CommentCard key={comment.id} comment={comment} />
